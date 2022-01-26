@@ -1,26 +1,47 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app">
+    <loginHeader></loginHeader>
+    <loginInput></loginInput>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import loginHeader from './components/loginHeader.vue'
+import loginInput from './components/loginInput.vue'
+
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
+  date: function(){
+    return {
+
+    }
+  },
+  components:{
+    'loginHeader':loginHeader,
+    'loginInput':loginInput
+
+  },
+  methods: function() {
+
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+body{
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  background-color: #f6f6f6;
+
+}
+input {
+  border-style: groove;
+  width: 200px;
+}
+button {
+  border-style: groove;
+
+}
+.shadow {
+  box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.03);
 }
 </style>
