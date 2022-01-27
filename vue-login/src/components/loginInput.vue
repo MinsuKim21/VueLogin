@@ -13,10 +13,12 @@
 </template>
 
 <script>
+// var loginBool = false;
+
 export default {
     data: function(){
         return{
-             inputID:"",
+            inputID:"",
             inputPW:""
          }
     },
