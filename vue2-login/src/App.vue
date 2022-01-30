@@ -11,14 +11,9 @@ import loginInput from './components/loginInput.vue'
 
 
 export default {
-  data: function(){
-    return {
-   
-    }
-  },
   components:{
-    'loginHeader':loginHeader,
-    'loginInput':loginInput
+    loginHeader,
+    loginInput
 
   },
   methods: function() {

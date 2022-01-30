@@ -11,7 +11,7 @@
 </template>
 
 <script>
-var HOST = 'https://192.168.0.6:8080'
+var HOST = 'localhost:8080'
 export default {
     data: function(){
         return{
@@ -77,5 +77,7 @@ button{
     border-radius: 6px;
     border: solid 1px rgba(0,0,0,.15);
     background-color: #024173;
+    color: #dadada; 
+    margin-top: 15px;
 }
 </style>

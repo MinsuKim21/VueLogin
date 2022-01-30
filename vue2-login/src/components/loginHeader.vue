@@ -4,6 +4,15 @@
   </haeder>
 </template>
 
+<script>
+import { mapGetters } from "vuex";
+export default {
+  computed: {
+    ...mapGetters(["headerText"])
+  }
+};
+</script>
+
 <style scoped>
 h1 {
     color: #2f3b52;
@@ -11,3 +20,4 @@ h1 {
     margin: 2.5rem 0 1.5rem;
 }
 </style>
+
